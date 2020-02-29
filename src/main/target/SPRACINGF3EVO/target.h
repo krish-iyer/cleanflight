@@ -77,10 +77,12 @@
 #define USE_BARO_BMP280
 
 #define MAG
-#define USE_MAG_AK8963
-//#define USE_MAG_HMC5883 // External
+#define USE_MAG_QMC5883
 
-#define MAG_AK8963_ALIGN CW90_DEG_FLIP
+// #define USE_MAG_AK8963
+// #define USE_MAG_HMC5883 // External
+
+// #define MAG_AK8963_ALIGN CW90_DEG_FLIP
 
 //#define SONAR
 
@@ -102,8 +104,8 @@
 #define USE_ESCSERIAL
 #define ESCSERIAL_TIMER_TX_PIN  PA15  // (HARDARE=0,PPM)
 
-#define UART1_TX_PIN            PA9
-#define UART1_RX_PIN            PA10
+// #define UART1_TX_PIN            PA9
+// #define UART1_RX_PIN            PA10
 
 #define UART2_TX_PIN            PA14 // PA14 / SWCLK
 #define UART2_RX_PIN            PA15
@@ -112,8 +114,11 @@
 #define UART3_RX_PIN            PB11 // PB11 (AF7)
 
 #define USE_I2C
-#define USE_I2C_DEVICE_1
-#define I2C_DEVICE              (I2CDEV_1)
+#define USE_I2C_DEVICE_2
+#define I2C_DEVICE              (I2CDEV_2)
+
+#define I2C2_SCL                PA9   // this line added
+#define I2C2_SDA                PA10   // this line added
 
 #define USE_SPI
 #define USE_SPI_DEVICE_1 // PB9,3,4,5 on AF5 SPI1 (MPU)

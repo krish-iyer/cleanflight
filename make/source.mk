@@ -246,6 +246,7 @@ SIZE_OPTIMISED_SRC := $(SIZE_OPTIMISED_SRC) \
             drivers/vtx_rtc6705_soft_spi.c \
             drivers/vtx_rtc6705.c \
             drivers/vtx_common.c \
+            drivers/compass/compass_qmc5883l.c \
             fc/fc_init.c \
             fc/cli.c \
             fc/settings.c \
